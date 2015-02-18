@@ -1,0 +1,10 @@
+The documentation for Plug is quite bad. Yes, there is a basic example but there is little else in the way of direction about how to properly use the functionality contained within. However, it appears to be in use by all of the web frameworks that are currently in development for Elixir. That is most certainly a disconnect. So, I decided to write a small commentary on my investigation into figuring out how Plug works. Granted, I am neither an expert nor a genius. In fact, I'm certainly not a programming wizard. I'm nothing other than a simple guy who like to write code and build products. Hence, if there are any epiphanies that you experience while reading this, they are definitely not due to me.
+
+The basic installation of Plug is easy. It is similar to any other Elixir dependency. Hence, the set up is pretty straight forward if you are used to Elixir. The installation steps can be see on Plug's Github page: https://github.com/elixir-lang/plug
+
+Next, I ran:
+
+~$ mix deps.get
+~$ mix deps.compile
+
+This grabs the required dependencies from the inter-web and then compiles the dependencies so they are ready to go. The first step is necessary (i.e. `mix deps.get`) whereas the second will happen the first time you run `iex -S mix` within the `plug_play` directory. 
