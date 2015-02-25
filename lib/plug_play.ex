@@ -14,12 +14,5 @@ defmodule PlugPlay do
   def start_server(port \\ 4000) do
     {:ok, pid} = Plug.Adapters.Cowboy.http __MODULE__, [], port: port
     IO.puts "Server running on port: #{port}, with PID: #{inspect pid}"
-
-    running_server
-  end
-  
-  defp running_server do
-    :timer.sleep(5)
-    running_server
   end
 end
